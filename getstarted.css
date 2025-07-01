@@ -1,0 +1,36 @@
+/* ...all your existing CSS above... */
+
+.container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+.container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#typing-text {
+  font-weight: bold;
+  font-size: 24px;
+  height: 30px;
+  color: purple;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid purple;
+  width: 100%;
+  margin-bottom: 10px;
+  animation: blinkCursor 0.8s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: purple; }
+}
+
+form button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+

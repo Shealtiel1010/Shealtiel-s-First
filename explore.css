@@ -1,0 +1,71 @@
+/* Gradient background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, orange, deeppink, purple);
+    color: #fff;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Intro section */
+.intro {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.food-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.food-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+}
